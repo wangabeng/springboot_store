@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 
+    url: jdbc:mysql://116.62.240.193:3306/anstore?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+  jpa:
+    show-sql:true
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  path: d:/
+server: 
+  servlet: 
+    context-path: /store
+  max-http-header-size: 10240000
