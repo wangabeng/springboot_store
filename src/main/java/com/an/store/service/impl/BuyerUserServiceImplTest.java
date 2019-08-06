@@ -1,7 +1,4 @@
-package com.an.store.repository;
-
-import java.util.List;
-import java.util.Optional;
+package com.an.store.service.impl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,14 +10,12 @@ import com.an.store.dataobject.BuyerUser;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BuyerUserRepositoryTest {
+public class BuyerUserServiceImplTest {
 	@Autowired
-	private BuyerUserRepository repositoy;
-	
+	private BuyerUserServiceImpl buyerUserServiceImpl;
 	@Test
 	public void findOne () {
-		BuyerUser result = repositoy.findByUserId(1);
+		BuyerUser result = buyerUserServiceImpl.findOne(1);
 		System.out.print(result);
 	}
-
 }

@@ -10,5 +10,6 @@ import com.an.store.dataobject.BuyerUser;
 
 
 public interface BuyerUserRepository extends JpaRepository<BuyerUser, Integer> {
-	   List<BuyerUser> findByUserId(Integer userId);
+	//	通过用户ID查找一个用户
+	BuyerUser findByUserId(Integer userId);
 }
